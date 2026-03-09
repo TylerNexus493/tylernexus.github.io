@@ -1,63 +1,95 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<title>Knockout Series</title>
+
+<title>Knockout - TylerNexus</title>
 
 <style>
 
 body{
-font-family:Segoe UI,Arial;
+margin:0;
+font-family:Segoe UI;
 background:#0f0f0f;
 color:white;
-text-align:center;
-padding:60px;
 }
 
-img{
-width:300px;
-border-radius:10px;
+header{
+height:300px;
+background:url("knockout.png") center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
 }
 
-.info{
-background:#1b1b1b;
-padding:30px;
+header h1{
+background:rgba(0,0,0,0.6);
+padding:15px 25px;
+border-radius:8px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:40px;
+}
+
+.badge{
+padding:6px 12px;
+border-radius:6px;
+font-weight:bold;
+}
+
+.easy{background:#2ecc71;}
+
+.progress{
+height:12px;
+background:#222;
 border-radius:10px;
-margin-top:30px;
+overflow:hidden;
+margin-top:10px;
+}
+
+.progress-bar{
+height:100%;
+background:#2ecc71;
+width:5%;
+}
+
+.back{
+margin-top:40px;
 display:inline-block;
-}
-
-a{
 color:#ff4444;
 text-decoration:none;
 }
 
 </style>
-
 </head>
 
 <body>
 
+<header>
 <h1>Knockout</h1>
+</header>
 
-<img src="knockout.png">
+<div class="container">
 
-<div class="info">
+<h2>Series Information</h2>
 
-<p><b>Difficulty:</b> Easy</p>
-
-<p><b>Length:</b> Short</p>
-
+<p><b>Difficulty:</b> <span class="badge easy">Easy</span></p>
+<p><b>Length:</b> Medium</p>
 <p><b>Status:</b> Active</p>
-
 <p><b>Release Date:</b> Coming Soon</p>
+
+<h3>Description</h3>
+
+<p>
+Knockout is a gameplay series focused on faster and lighter gameplay
+experiences with shorter but exciting challenges.
+</p>
+
+<a href="index.html" class="back">← Back to Home</a>
 
 </div>
 
-<br><br>
-
-<a href="index.html">Back to Home</a>
-
 </body>
-
 </html>
