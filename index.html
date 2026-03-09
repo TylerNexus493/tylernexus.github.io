@@ -94,6 +94,13 @@ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
 
+/* CARD LINK */
+
+.card-link{
+text-decoration:none;
+color:white;
+}
+
 /* CARDS */
 
 .card{
@@ -126,6 +133,32 @@ margin:0;
 .card p{
 color:#bbb;
 font-size:14px;
+}
+
+/* DIFFICULTY BADGES */
+
+.difficulty{
+padding:4px 10px;
+border-radius:6px;
+font-weight:bold;
+margin-left:5px;
+}
+
+.easy{
+background:#2ecc71;
+}
+
+.medium{
+background:#f1c40f;
+color:black;
+}
+
+.moderate{
+background:#e67e22;
+}
+
+.hard{
+background:#e74c3c;
 }
 
 /* BUTTON */
@@ -194,6 +227,7 @@ margin-top:60px;
 <div class="grid">
 
 
+<a href="forsaken.html" class="card-link">
 <div class="card">
 
 <img src="forsaken.png">
@@ -203,20 +237,18 @@ margin-top:60px;
 <h3>Forsaken</h3>
 
 <p>
-Difficulty: Hard<br>
+Difficulty: <span class="difficulty hard">Hard</span><br>
 Status: Active<br>
 Length: Long
 </p>
 
-<a href="https://youtube.com/playlist?list=PLj29Em7ZCZJUsYBs0WkDngR0SI8g--0u5">
-<button>Watch Series</button>
+</div>
+
+</div>
 </a>
 
-</div>
 
-</div>
-
-
+<a href="dandysworld.html" class="card-link">
 <div class="card">
 
 <img src="dandysworld.png">
@@ -226,20 +258,18 @@ Length: Long
 <h3>Dandy's World</h3>
 
 <p>
-Difficulty: Medium<br>
+Difficulty: <span class="difficulty medium">Medium</span><br>
 Status: Work In Progress<br>
 Length: Long
 </p>
 
-<a href="https://youtube.com/playlist?list=PLj29Em7ZCZJUJ10ngekaBoxB1Ygu9nJYu">
-<button>Watch Series</button>
+</div>
+
+</div>
 </a>
 
-</div>
 
-</div>
-
-
+<a href="youvshomer.html" class="card-link">
 <div class="card">
 
 <img src="youvshomer.png">
@@ -249,20 +279,18 @@ Length: Long
 <h3>You VS Homer</h3>
 
 <p>
-Difficulty: Moderate<br>
+Difficulty: <span class="difficulty moderate">Moderate</span><br>
 Status: Work In Progress<br>
 Length: Medium
 </p>
 
-<a href="https://youtube.com/playlist?list=PLj29Em7ZCZJWegBQGym1Q7Eo_hQVv-fbG">
-<button>Watch Series</button>
+</div>
+
+</div>
 </a>
 
-</div>
 
-</div>
-
-
+<a href="knockout.html" class="card-link">
 <div class="card">
 
 <img src="knockout.png">
@@ -272,16 +300,15 @@ Length: Medium
 <h3>Knockout</h3>
 
 <p>
-Difficulty: Easy<br>
+Difficulty: <span class="difficulty easy">Easy</span><br>
 Status: Active<br>
 Length: Medium
 </p>
 
-<button>Coming Soon</button>
-
 </div>
 
 </div>
+</a>
 
 
 </div>
