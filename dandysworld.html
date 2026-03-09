@@ -1,63 +1,111 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<title>Dandy's World Series</title>
+
+<title>Dandy's World - TylerNexus</title>
 
 <style>
 
 body{
-font-family:Segoe UI,Arial;
+margin:0;
+font-family:Segoe UI;
 background:#0f0f0f;
 color:white;
-text-align:center;
-padding:60px;
 }
 
-img{
-width:300px;
-border-radius:10px;
+header{
+height:300px;
+background:url("dandysworld.png") center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
 }
 
-.info{
-background:#1b1b1b;
-padding:30px;
+header h1{
+background:rgba(0,0,0,0.6);
+padding:15px 25px;
+border-radius:8px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:40px;
+}
+
+.badge{
+padding:6px 12px;
+border-radius:6px;
+font-weight:bold;
+}
+
+.medium{background:#f1c40f;color:black;}
+
+.progress{
+height:12px;
+background:#222;
 border-radius:10px;
+overflow:hidden;
+margin-top:10px;
+}
+
+.progress-bar{
+height:100%;
+background:#f1c40f;
+width:25%;
+}
+
+iframe{
 margin-top:30px;
-display:inline-block;
+width:100%;
+height:400px;
 }
 
-a{
+.back{
+margin-top:40px;
+display:inline-block;
 color:#ff4444;
 text-decoration:none;
 }
 
 </style>
-
 </head>
 
 <body>
 
+<header>
 <h1>Dandy's World</h1>
+</header>
 
-<img src="dandysworld.png">
+<div class="container">
 
-<div class="info">
+<h2>Series Information</h2>
 
-<p><b>Difficulty:</b> Medium</p>
-
+<p><b>Difficulty:</b> <span class="badge medium">Medium</span></p>
 <p><b>Length:</b> Long</p>
-
 <p><b>Status:</b> Work In Progress</p>
+<p><b>Release Date:</b> Coming Soon</p>
 
-<p><b>Release Date:</b> Date TBA</p>
+<h3>Progress</h3>
+
+<div class="progress">
+<div class="progress-bar"></div>
+</div>
+
+<h3>Description</h3>
+
+<p>
+Dandy's World explores gameplay mechanics and progression through
+a unique game environment with new episodes added over time.
+</p>
+
+<h3>Playlist</h3>
+
+<iframe src="https://www.youtube.com/embed/videoseries?list=PLj29Em7ZCZJUJ10ngekaBoxB1Ygu9nJYu"></iframe>
+
+<a href="index.html" class="back">← Back to Home</a>
 
 </div>
 
-<br><br>
-
-<a href="index.html">Back to Home</a>
-
 </body>
-
 </html>
